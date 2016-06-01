@@ -6,7 +6,7 @@ api.get('/', function(req,res,next){
 });
 
 api.get('/contacts',function(req,res,next){
-	res.send();
+	res.send([]);
 
 })
 
@@ -16,15 +16,15 @@ api.get('/contacts/:name',function(req,res,next){
 })
 api.post('/contacts/:name',function(req,res,next){
 	if(req.params.name=== 'exists'){
-		return res.send().status(403);	
+		return res.status(403).send();	
 		}
-
+	res.send();
 })
 api.get('/contacts/:name',function(req,res,next){
 	res.send();
 
 })
-api.put('/contacts/:name/new',function(req,res,next){
+api.put('/contacts/:name/:new',function(req,res,next){
 	res.send();
 
 })
