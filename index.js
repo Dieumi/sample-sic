@@ -33,6 +33,6 @@ api.delete('/contacts/:name',function(req,res,next){
 })
 var port=process.env.PORT || DEFAULT_PORT;
 console.log("server started on port "+port);
-api.listen(3001);
+api.listen(port);
 
 module.exports=api;
