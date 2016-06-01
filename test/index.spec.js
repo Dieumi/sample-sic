@@ -1,4 +1,4 @@
-var request = require("SuperTest");
+var request = require("supertest");
 var api=require("../index.js");
 
 describe('contact',function(){
